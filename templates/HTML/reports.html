@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='CSS/hist.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='CSS/navbar.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='CSS/style.css') }}"
+    />
+    <script
+      src="https://kit.fontawesome.com/b00b18a9ea.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+  rel="icon"
+  type="image/png"
+  href="{{ url_for('static', filename='SRC/favicon/android-chrome-192x192.png') }}"
+/>
+<link
+  rel="icon"
+  type="image/x-icon"
+  href="{{ url_for('static', filename='SRC/favicon/favicon.ico') }}"
+/>
+  </head>
+  <body>
+    {% include 'HTML/navbar.html' %}
+    <div class="container">{% include 'HTML/hist.html' %}</div>
+    <script src="{{ url_for('static', filename='JS/nav.js') }}"></script>
+    <script src="{{ url_for('static', filename='JS/hist.js') }}"></script>
+  </body>
+</html>

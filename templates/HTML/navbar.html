@@ -1,0 +1,23 @@
+<div class="navbar">
+  <i class="fa-solid fa-bars-staggered" id="menu-icon"></i>
+  <p>Monitoring System</p>
+  <img
+    src="{{ url_for('static', filename='SRC/mvp.png') }}"
+    alt="Super Image"
+  />
+</div>
+
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <i class="fa-solid fa-xmark" id="cross-icon"></i>
+    <img
+      src="{{ url_for('static', filename='SRC/mvp.png') }}"
+      alt="Super Image"
+    />
+  </div>
+
+  <ul class="tile">
+    <li><i class="fa-solid fa-house"></i><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+    <li><i class="fa-solid fa-file"></i></i><a href="{{ url_for('reports') }}">Reports</a></li>
+  </ul>
+</div>

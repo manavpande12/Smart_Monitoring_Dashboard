@@ -1,0 +1,45 @@
+{% extends 'HTML/base.html'%}{% block head %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='CSS/style.css') }}"
+/>
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='CSS/navbar.css') }}"
+/>
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='CSS/timeline.css') }}"
+/>
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='CSS/responsive.css') }}"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  href="{{ url_for('static', filename='SRC/favicon/android-chrome-192x192.png') }}"
+/>
+<link
+  rel="icon"
+  type="image/x-icon"
+  href="{{ url_for('static', filename='SRC/favicon/favicon.ico') }}"
+/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.4.0/justgage.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+<script
+  src="https://kit.fontawesome.com/b00b18a9ea.js"
+  crossorigin="anonymous"
+></script>
+{% endblock %} {% block body %} {% endblock %} {% block scripts %}
+<script src="{{ url_for('static', filename='JS/chart.js') }}"></script>
+<script src="{{ url_for('static', filename='JS/tank.js') }}"></script>
+<script src="{{ url_for('static', filename='JS/nav.js') }}"></script>
+<script src="{{ url_for('static', filename='JS/gauge.js') }}"></script>
+<script src="{{ url_for('static', filename='JS/pie.js') }}"></script>
+
+{% endblock %}
